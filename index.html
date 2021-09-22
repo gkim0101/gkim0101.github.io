@@ -73,9 +73,9 @@
     <header class="inner cover cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
         <h1 class="wow fadeIn cover-heading" style="text-align: right; margin-top: 0.5em; margin-right: 0.5em; font-size: 2rem;">
             <span style="letter-spacing : -0.13em; margin-right: 0.1em">⎽⎽</span><br/>
-            11 <br/>
+             2 <br/>
             月 <br/>
-            28 <br/>
+            26 <br/>
             日 <br/>
             <span style="letter-spacing : -0.13em; margin-right: 0.1em;">⎺⎺</span>
         </h1>
@@ -322,20 +322,20 @@
             <br/>
             <!-- Button trigger modal -->
             <button type="button" class="wow fadeInUp btn section7-button" data-toggle="modal" data-target="#groom">
-                신랑 혼주 계좌번호 보기
+                신랑 계좌번호 보기
             </button>
             <!-- Modal -->
             <div class="modal fade" id="groom" tabindex="-1" aria-labelledby="groom" aria-hidden="true">
                 <div class="modal-dialog modal-dialog-centered">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h5 class="modal-title section7-modal section7-modal-title" id="groomLabel">신랑 혼주 계좌번호 보기</h5>
+                            <h5 class="modal-title section7-modal section7-modal-title" id="groomLabel">신랑 계좌번호 보기</h5>
                             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                 <span aria-hidden="true">&times;</span>
                             </button>
                         </div>
                         <div class="modal-body section7-modal section7-modal-content">
-                            신랑 혼주 : KEB하나은행 645-910-545222-07 박영선
+                            신랑 : KEB하나은행 313-890744-00907 김길남
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
@@ -345,7 +345,7 @@
             </div>
             <!-- Button trigger modal -->
             <button type="button" class="wow fadeInUp btn section7-button" data-toggle="modal" data-target="#bride">
-                신부 혼주 계좌번호 보기
+                신부 계좌번호 보기
             </button>
             <!-- Modal -->
             <div class="modal fade" id="bride" tabindex="-1" aria-labelledby="bride" aria-hidden="true">
@@ -358,7 +358,7 @@
                             </button>
                         </div>
                         <div class="modal-body section7-modal section7-modal-content">
-                            신부 혼주 : KEB하나 660-91135-0474-07 유은정
+                            신부 : KEB하나 660-91135-0474-07 유은정
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-secondary" data-dismiss="modal">닫기</button>
@@ -444,16 +444,16 @@
             <br/>
             <div id="map" class="wow fadeInUp" style="width:100%;height:350px;"></div>
 
-            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=122a613fc96fa3ab9169935d07c14e3f"></script>
+            <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=d90d467512d589281551a68b38463d52"></script>
             <script>
                 var mapContainer = document.getElementById('map'), // 지도를 표시할 div
                     mapOption = {
-                        center: new kakao.maps.LatLng(37.4165133,126.8827629), // 지도의 중심좌표
+                        center: new kakao.maps.LatLng(37.4165133 , 126.8827629), // 지도의 중심좌표
                         level: 3 // 지도의 확대 레벨
                     };
 
                 var map = new kakao.maps.Map(mapContainer, mapOption);
-                var markerPosition  = new kakao.maps.LatLng(37.4165133,126.8827629);
+                var markerPosition  = new kakao.maps.LatLng(37.4165133 , 126.8827629);
 
                 // 마커를 생성합니다
                 var marker = new kakao.maps.Marker({
