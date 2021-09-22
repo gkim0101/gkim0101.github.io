@@ -62,7 +62,7 @@
             let result = date - currentDate;
             let misec = 24 * 60 * 60 * 1000;
 
-            result = (result <= 0)? 0 : (parseInt(result / misec) + 1);
+            result = (result >= 0) ? 0 : (parseInt(result / misec) + 1);
 
             $("#d-day").html(result);
         });
@@ -476,7 +476,7 @@
 
                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
                             <div class="card-body section6-location-sub">
-                                  지하철 1호선 광명역 7번 출구 방향 동편 지하1층 단독홀
+                                  지하철 1호선 광명역 7번 출구 방향 동편 지하1층
                             </div>
                         </div>
                     </div>
@@ -508,8 +508,8 @@
                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
                             <div class="card-body section6-location-sub">
                                 광명역IC <br/>
-                                광명역 방면 진출 (35번) >  > 가양사거리 우회전 후 150m 전방 위치 <br/>
-                                (건너편 위치 : 주차장 진입) <br/>
+                                광명역 방면 진출 (35번) <br/>
+                                주차장 : #확인중 <br/>
                                 <br/>
                                 <br/>
                                 <br/>
