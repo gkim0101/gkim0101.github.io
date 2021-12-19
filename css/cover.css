@@ -100,7 +100,7 @@ html {
 body {
   display: -ms-flexbox;
   display: flex;
-  color: #333;
+  color: #fff;
 }
 
 .cover-container {
