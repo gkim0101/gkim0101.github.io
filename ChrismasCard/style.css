@@ -1,0 +1,62 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background: url('bobfamily.png') no-repeat center center fixed; 
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+}
+
+.card {
+    text-align: center;
+    padding: 50px;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 15px;/* existing styles */
+    transform: translateY(100vh); /* Start off-screen */
+    transition: transform 0.5s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card header, .card footer {
+    margin-bottom: 20px;
+    color: #d23f2b; /* Festive Red */
+}
+
+
+/* Add a class for when the card is in view */
+.card.in-view {
+    transform: translateY(0);
+}
+
+.message {
+    margin: 20px 0;
+    color: #005f30; /* Deep Green */
+}
+
+#snowflakeContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    color: #fff;
+    text-shadow: 0 0 5px #000;
+    user-select: none;
+    z-index: 9999;
+    animation-name: fall;
+    animation-timing-function: linear;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh);
+    }
+}
