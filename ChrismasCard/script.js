@@ -1,3 +1,21 @@
+function getParameterByName(name, url = window.location.href) {
+    name = name.replace(/[\[\]]/g, '\\$&');
+    const regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
+            results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+    const friendName = getParameterByName('name'); // 'name' is the URL parameter
+    if (friendName) {
+        document.getElementById('greeting').innerHTML = 
+            document.getElementById('greeting').innerHTML.replace('[ALL]', friendName);
+    }
+});
+
+
 function createSnowflake() {
     const snowflake = document.createElement('div');
     snowflake.classList.add('snowflake');
@@ -30,3 +48,5 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 });
+
+
