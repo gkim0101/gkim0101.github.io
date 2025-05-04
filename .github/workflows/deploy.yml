@@ -2,8 +2,7 @@ name: Deploy Quartz site to GitHub Pages
 
 on:
   push:
-    branches:
-      - master  # or main, depending on your default branch
+    branches: ["master"]
 
 permissions:
   contents: read
@@ -16,12 +15,12 @@ concurrency:
 
 jobs:
   build:
-    runs-on: ubuntu-22.04
+    runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
+      - uses: actions/checkout@v4
         with:
           fetch-depth: 0
-      - uses: actions/setup-node@v3
+      - uses: actions/setup-node@v4
         with:
           node-version: 20
       - name: Install Dependencies
@@ -29,7 +28,7 @@ jobs:
       - name: Build Quartz
         run: npx quartz build
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
+        uses: actions/upload-pages-artifact@v4
         with:
           path: public
 
@@ -42,4 +41,4 @@ jobs:
     steps:
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v3
+        uses: actions/deploy-pages@v4
