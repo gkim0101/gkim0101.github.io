@@ -38,7 +38,16 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Explorer({
+      folders: [
+        { path: "00_inbox", label: "Inbox" },
+        { path: "01_projects", label: "Projects" },
+        { path: "02_areas", label: "Areas" },
+        { path: "03_resources", label: "Resources" },
+        { path: "04_archive", label: "Archive" },
+        { path: "", label: "Scratchpad" }
+      ]
+    }),
   ],
   right: [
     Component.Graph(),
