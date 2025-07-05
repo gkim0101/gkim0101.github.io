@@ -60,3 +60,10 @@ The best way to keep you positive is to get enough sleep
 Long-term impact on action
 
 - Read books that can help you improve your life, body and mind, relationships, and work
+
+## NOT_TODO
+
+Save energy and time(life)
+
+- Limit distraction : Video(Short forms), Infinite scrolling, Social media, Comics, and Games
+- Don't be extreme (There is always the way out)
