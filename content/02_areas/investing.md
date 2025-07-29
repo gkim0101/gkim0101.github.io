@@ -13,7 +13,8 @@
 
 - **Dollar-Cost Averaging**
 
-  - Divide your investment budget into 3 equal parts and invest 1/3 of your investment budget when the price is decreasing by 10% or just buy 1/3 of your investment budget every month.
+  - Divide your investment budget into 5 equal parts and invest 1/5 of your investment budget when the price is decreasing by 20%
+  - Can invest in up to 2 ETFs simultaneously while waiting for trailing stop conditions to trigger
   - Use leftover salary to invest regularly, reducing the impact of market timing.
 
 - **Monthly Reviews**
@@ -27,6 +28,12 @@
 - **Support Confirmation Before Switching**
 
   - Only switch to a better-performing ETF after confirming support levels for at least one month.
+
+- **Half Trailing Stop Strategy**
+
+  - **Initial Target Sale:** When the price hits the target price [Average purchase price + (Mid-term high - Mid-term low) × 0.8], sell half of your investment position
+  - **Trailing Stop for Remainder:** For the remaining half, use a trailing stop loss at [Current highest price - (Mid-term high - Mid-term low) × 0.1]
+  - **Purpose:** This approach locks in profits while allowing continued upside participation with reduced risk exposure
 
 - **Diversification Plan**
 
