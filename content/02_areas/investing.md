@@ -13,7 +13,7 @@
 
 - **Dollar-Cost Averaging**
 
-  - Divide your investment budget into 5 equal parts and invest 1/5 of your investment budget when the price is decreasing by 20%
+  - Divide your investment budget into 5 equal parts and invest 1/5 of your investment budget when the price is decreasing by 20%(based on start point price)
   - Can invest in up to 2 ETFs simultaneously while waiting for trailing stop conditions to trigger
   - Use leftover salary to invest regularly, reducing the impact of market timing.
 
